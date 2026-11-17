@@ -11,15 +11,7 @@ class Config:
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     OTP_EXPIRY_SECONDS = int(os.getenv("OTP_EXPIRY_SECONDS", "300"))
-    # MAIL_SERVER = os.getenv("SMTP_HOST", "smtp.gmail.com")
-    # MAIL_PORT = int(os.getenv("SMTP_PORT", "587"))
-    # MAIL_USE_TLS = True
-    # MAIL_USERNAME = os.getenv("SMTP_USERNAME", "")
-    # MAIL_PASSWORD = os.getenv("SMTP_PASSWORD", "")
-    # MAIL_DEFAULT_SENDER = os.getenv(
-    #     "SMTP_FROM_EMAIL",
-    #     os.getenv("SMTP_USERNAME", "")
-    # )
+
     BREVO_API_KEY = os.getenv("BREVO_API_KEY", "")
     BREVO_SENDER_EMAIL = os.getenv("BREVO_SENDER_EMAIL", "")
     BREVO_SENDER_NAME = os.getenv("BREVO_SENDER_NAME", "Festify")
